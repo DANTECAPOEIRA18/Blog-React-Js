@@ -10,6 +10,7 @@ import './App.css';
 import LoginView from './pages/Login/Login';
 import MenuView from './pages/Menu/Menu';
 import UserView from './pages/Users/Users';
+import PostsView from './pages/Posts/Posts';
 import 'antd/dist/antd.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route exact path="/" component={LoginView} />
             <Route exact path="/menu" component={MenuView} />
             <Route exact path="/users" component={UserView} />
+            <Route exact path="/posts" component={PostsView} />
           </Switch>
         </BrowserRouter>
       </Provider>

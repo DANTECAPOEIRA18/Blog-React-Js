@@ -42,8 +42,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin-left: 5vw; */
     /* background-color: gray; */
-    grid-area: Logo-user;
+    grid-area: Logo-user !important; 
     height: 80%;
     margin: 5%;
 }
@@ -102,10 +103,10 @@
 }
 
 .imgRedonda-user {
-    width:80px;
-    height:80px;
-    border-radius:40px;
-    border:5px solid rgb(253, 253, 253);
+    width:80px !important;
+    height:80px !important;
+    border-radius:40px !important;
+    border:5px solid rgb(253, 253, 253) !important;
 }
 
 .general-container-user-button {

@@ -31,6 +31,20 @@ function getTags({ signal }) {
 
 }
 
+function getComments({ signal, postId }) {
+
+  const { appId } = environment;
+  const method = 'GET';
+  return tenantRequest(`/post/${postId}/comment`, {
+    signal,
+    method,
+    headers: {
+      'app-id': appId,
+    },
+  });
+
+}
+
 export default {
-  getPosts, getTags,
+  getPosts, getTags, getComments,
 };

@@ -40,6 +40,7 @@ const useMenu = () => {
     const tags = await apiPosts.getTags({ signal });
     dispatch(postActions.setListPosts(posts.data));
     dispatch(tagsActions.setListTags(tags.data));
+    history.push('/posts');
 
   };
 

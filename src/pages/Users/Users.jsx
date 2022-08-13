@@ -21,6 +21,7 @@ import './Users.css';
 import logo from '../../assets/img/chat.png';
 import useUsers from './useUsers';
 import ListUsers from '../../components/ListUsers';
+import withAuth from '../../utils/withAuth';
 // import Button from '../../components/ButtonMenu';
 
 function UserView() {
@@ -63,4 +64,4 @@ function UserView() {
 
 }
 
-export default UserView;
+export default withAuth(UserView);

@@ -32,7 +32,7 @@ export default function Login({ onSuccess, onFailure }) {
       onSuccess={onSuccess}
       onFailure={onFailure}
       cookiePolicy="single_host_origin"
-      // isSignedIn
+      isSignedIn
     />
   );
 

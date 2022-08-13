@@ -21,6 +21,7 @@ import './Menu.css';
 import logo from '../../assets/img/chat.png';
 import useMenu from './useMenu';
 import MenuButtons from '../../components/MenuButtons';
+import withAuth from '../../utils/withAuth';
 
 function MenuView() {
 
@@ -63,4 +64,4 @@ function MenuView() {
 
 }
 
-export default MenuView;
+export default withAuth(MenuView);
