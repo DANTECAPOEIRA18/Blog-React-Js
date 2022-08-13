@@ -1,0 +1,109 @@
+.general-container-menu {
+    /* background-color: rgba(255, 0, 0, 0.432); */
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:  "div1-menu" 
+                          "div2-menu";
+}
+
+
+.div1-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: gray; */
+    grid-area: div1-menu;
+}
+
+.div2-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    grid-area: div2-menu;
+}
+
+.div1-container-menu {
+    /* background-color: rgba(255, 0, 0, 0.432); */
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 10% 70% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas:  "Logo-menu title-menu user-menu" ;
+    background-color: rgba(13, 90, 190, 0.5);
+    border-radius: 20px;
+}
+
+.logo-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: gray; */
+    grid-area: Logo-menu;
+    height: 80%;
+    margin: 5%;
+}
+
+.title-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: gray; */
+    grid-area: title-menu;
+    height: 80%;
+    margin: 5%;
+    font-size: 5vh;
+    color: white;
+}
+
+.user-menu {
+    justify-content: center;
+    align-items: center;
+    /* background-color: gray; */
+    /* background-color: rgba(255, 0, 0, 0.432);  */
+    grid-area: user-menu;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    font-size: 3vh;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    grid-template-areas:  "Logo-space-menu name-space-menu" ;
+}
+
+.Logo-space-menu {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: gray; */
+    grid-area: Logo-space-menu;
+    height: 80%;
+    margin: 1%;
+    color: white;
+}
+
+.name-space-menu {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: gray; */
+    grid-area: name-space-menu;
+    height: 80%;
+    margin: 1%;
+    color: white;
+}
+
+.img-logo-menu{
+    height: 10vh;
+}
+
+.imgRedonda-menu {
+    width:80px;
+    height:80px;
+    border-radius:40px;
+    border:5px solid rgb(253, 253, 253);
+}

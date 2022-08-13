@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "firefox",
+            "request": "launch",
+            "name": "Launch Edge against localhost",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            "pathMappings": [
+                {
+                    "url": "http://localhost:3000/mnt/c/WEBSTORM/DeepSea/counter-cable/src",
+                    "path": "${workspaceFolder}/src"
+                }
+            ]
+        }
+    ]
+  }

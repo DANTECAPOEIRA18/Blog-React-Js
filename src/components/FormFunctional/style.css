@@ -1,0 +1,57 @@
+.container-form-perfil{
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal-content{
+    border-radius: 10px;
+}
+
+.ant-modal-content{
+    background-color: rgba(44, 195, 221, 0.3) !important;
+    border-radius: 10px !important;
+}
+
+.ant-modal-body{
+    background-color: rgba(44, 195, 221, 0.3);
+    border-radius: 10px;
+}
+
+p{
+    font-size: 26px;
+    font-weight: bolder;
+    color: white;
+}
+
+form{
+    text-align: left;
+    padding: 0px 80px 0px 80px;
+}
+
+.ant-form-item{
+    margin: 0px 0px 8px 0px;
+}
+
+.btn-form{
+    margin: 60px 0px 0px 0px;
+    display: flex !important;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.button-form{
+    width: 10vw !important;
+    border-radius: 10px !important;
+    border: 20px !important;
+    background-color: red !important;
+    border-color: red !important;
+    color: white !important;
+}
+
+.button-form-success{
+    width: 10vw !important;
+    border-radius: 10px !important;
+    border: 20px !important;
+    background-color: green !important;
+    border-color: red !important;
+    color: white !important;
+}
