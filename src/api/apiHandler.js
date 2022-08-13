@@ -1,7 +1,9 @@
+import { environment } from '../utils/config';
+
 function apiHandler() {
 
-  const apiUrl = '';
-  const publicUrl = `${apiUrl}/api`;
+  const { apiUrl } = environment;
+  const publicUrl = `${apiUrl}`;
 
   async function commonRequest(endpoint, {
     method, body, signal, headers,

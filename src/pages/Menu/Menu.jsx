@@ -20,10 +20,13 @@ import React from 'react';
 import './Menu.css';
 import logo from '../../assets/img/chat.png';
 import useMenu from './useMenu';
+import MenuButtons from '../../components/MenuButtons';
 
 function MenuView() {
 
-  const { imageUser, nameUser } = useMenu();
+  const {
+    imageUser, nameUser, usersView, postsView, exitApp,
+  } = useMenu();
   return (
     <>
       <div className="general-container-menu">
@@ -44,7 +47,15 @@ function MenuView() {
           </div>
         </div>
         <div className="div2-menu">
-          BOTONES
+          <div className="general-container-menu-button">
+            <div className="div2-menu-b">
+              <MenuButtons
+                handleClickExit={exitApp}
+                handleClickPosts={postsView}
+                handleClickUsers={usersView}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>

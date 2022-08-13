@@ -5,8 +5,7 @@ import { useDispatch } from 'react-redux';
 import { message } from 'antd';
 import { useHistory } from 'react-router-dom';
 import userActions from '../../state/users/actions';
-
-const clientId = '776484690454-gfstsjmv9j24euv9sphop8aco3rtcedq.apps.googleusercontent.com';
+import { environment } from '../../utils/config';
 
 const useLogin = () => {
 
@@ -14,6 +13,7 @@ const useLogin = () => {
   const dispatch = useDispatch();
   useEffect(() => {
 
+    const { clientId } = environment;
     const initClient = () => {
 
       gapi.client.init({

@@ -1,26 +1,19 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable react/jsx-filename-extension */
 /* eslint-disable react/react-in-jsx-scope */
-// import React, { useEffect } from 'react';
-// import {
-//   faEraser,
-//   faTrash,
-//   faWrench,
-//   faPlay,
-//   faPause,
-//   faStop,
-// } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FcGoogle } from 'react-icons/fc';
 import { GoogleLogin } from 'react-google-login';
 import { Button } from 'antd';
 import './Login.css';
+import { environment } from '../../utils/config';
 // import { propTypes } from 'react-bootstrap/esm/Image';
-
-const clientId = '776484690454-gfstsjmv9j24euv9sphop8aco3rtcedq.apps.googleusercontent.com';
 
 export default function Login({ onSuccess, onFailure }) {
 
+  const { clientId } = environment;
+  console.log('CLIENT_ID: ', clientId);
   return (
     <GoogleLogin
       clientId={clientId}
