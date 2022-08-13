@@ -9,6 +9,7 @@ import './App.css';
 // import LogOut from './components/Logout/Logout';
 import LoginView from './pages/Login/Login';
 import MenuView from './pages/Menu/Menu';
+import UserView from './pages/Users/Users';
 import 'antd/dist/antd.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={LoginView} />
             <Route exact path="/menu" component={MenuView} />
+            <Route exact path="/users" component={UserView} />
           </Switch>
         </BrowserRouter>
       </Provider>

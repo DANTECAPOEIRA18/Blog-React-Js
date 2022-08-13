@@ -30,6 +30,7 @@ const useMenu = () => {
 
     const users = await apiUser.getUsers({ signal });
     dispatch(userActions.setListUsers(users.data));
+    history.push('/users');
 
   };
 
